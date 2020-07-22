@@ -22,7 +22,7 @@ You told him that this will literally take you an entire day, but he's very insi
 
 Fork and clone this repository, then let's build him a full-stack app using Express and MongoDB for the back end and JavaScript/jQuery for the front end!
 
-* [Step One](StepOne.md)
-* [Step Two](StepTwo.md)
-* [Step Three](StepThree.md)
-* [Step Four](StepFour.md)
+* [Step One - Setting up and seeding your database](StepOne.md)
+* [Step Two - Querying the collection with Mongoose](StepTwo.md)
+* [Step Three - Serving data via Express](StepThree.md)
+* [Step Four - Designing the front end](StepFour.md)
