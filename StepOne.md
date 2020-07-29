@@ -103,7 +103,7 @@ Ok, cool. Now for each individual record, your uncle wants to be able to see the
 * Release year
 * Cover art (optional)
 
-The next part is up to *you*. Touch `models/record.js`, then get in there and define your `Record` model!
+**The next part is up to *you*.** Touch `models/record.js`, then get in there and define your `Record` model!
 > HINT: The `artist` in your model will refer to a MongoDB document ID with ref `'artists'`.
 
 ## Seeding the database

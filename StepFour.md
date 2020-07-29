@@ -1,6 +1,6 @@
 # Record Collection: Step Four
 
-At this point, you've built an entire API for [your uncle's record collection app](README.md). You are a computer genius, just like your grandma told him! You should be feeling pretty good about yourself.
+At this point, you've built an entire API for [your uncle's record collection app](README.md). You *are* a computer genius, just like your grandma told him! You should be feeling pretty good about yourself.
 
 >![strike a pose](https://media1.giphy.com/media/uLiOo1PxPjynK/giphy.gif?cid=ecf05e473auia4funwi6seiy7tkkz4wyhesnd4xrcw8ctx22&rid=giphy.gif)
 
