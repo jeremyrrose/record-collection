@@ -1,6 +1,6 @@
-# Step Three
+# Record Collection: Step Three
 
-Now that you've set up your database and  built controller functions to pull data from it, you can take the third step toward setting up [your uncle's record collection app](README.md).
+Now that you've set up your database and built controller functions to pull data from it, you can take the third step toward setting up [your uncle's record collection app](README.md).
 
 > **OH-OHHHH WE'RE HALFWAY THERE**
 >
