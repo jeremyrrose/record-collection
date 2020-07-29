@@ -52,18 +52,22 @@ Let's get connected to our `recordCollection` database in MongoDB and export a `
 ```javascript
 const mongoose = require('mongoose')
 
+// use environment URI if available
 let MONGODB_URI = process.env.PROD_MONGODB || process.env.MONGODB_URI || 'mongodb://localhost:27017/recordCollection'
 
+// connect to database
 mongoose
     .connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true })
-    .then(() => {
-        console.log('Successfully connected to MongoDB.')
-    })
     .catch(e => {
-        console.error('Connection error', e.message)
+        console.error('Connection error:', e.message)
     })
 
 const db = mongoose.connection
+
+// connection messaging
+db.on("error", (err) => console.log(err.message + "\nIs Mongod not running?"));
+db.on("connected", () => console.log("MongoDB connected!"));
+db.on("disconnected", () => console.log("MongoDB disconnected."));
 
 module.exports = db
 ```
@@ -81,7 +85,7 @@ const artistSchema = new Schema(
         records: [
           {
             type: Schema.Types.ObjectId,
-            ref: 'Record'
+            ref: 'records'
           }
         ]
     },
@@ -100,7 +104,7 @@ Ok, cool. Now for each individual record, your uncle wants to be able to see the
 * Cover art (optional)
 
 The next part is up to *you*. Touch `models/record.js`, then get in there and define your `Record` model!
-> HINT: The `artist` in your model will refer to a MongoDB document ID.
+> HINT: The `artist` in your model will refer to a MongoDB document ID with ref `'artists'`.
 
 ## Seeding the database
 
@@ -226,6 +230,7 @@ addRecords()
 For this one, we need to require *both* models, since each artist needs to be updated to include the new record. Now take a look at the `addRecords()` function.
 
 Because we need to get artist IDs for each record from the database, we need to use `async` and `await` to give our DB time to respond. Then we map through the `recordSeed` array, and for each `recordToAdd`, we do the following:
+
 * Look up the artist based on the name provided.
 * Insert the artist's ID in our `recordToAdd` object.
 * Create the record in the database.
