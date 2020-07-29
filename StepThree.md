@@ -1,20 +1,26 @@
 # Step Three
 
-This is the third step toward setting up [your uncle's record collection app](README.md).
+Now that you've set up your database and  built controller functions to pull data from it, you can take the third step toward setting up [your uncle's record collection app](README.md).
+
+> **OH-OHHHH WE'RE HALFWAY THERE**
+>
+> ![livin on a prayer](https://media1.giphy.com/media/5fE0uLFQrPCFy/giphy.gif?cid=ecf05e479plhauu65xx6h5rj3eergx5imd7fqbmwlnqk0jbs&rid=giphy.gif)
+>
+>*Take my code, and we'll make it, I swear.*
 
 ## Connecting Express
 
-Now we'll set up a server using Express's `Router` object and connect it to our database. First we'll need to make a few files and directories inside our `server` directory:
+Now we can build a server using Express and `Router` to connect requests to our controller functions. First we'll need to install Express inside our `records-api` directory:
 
 ```bash
-{ bash commands here }
+mkdir routes
+touch server.js routes/index.js
 ```
 
-Inside your new `server.js` file, let's get things started by requiring Express, setting up a root route, and listening on port 3000!
+Now `touch server.js`, and let's get things started by requiring Express, setting up a root route, and listening on port 3000!
 
 ```javascript
 const express = require('express');
-const routes = require('./routes');
 const app = express();
 
 app.get('/', (req,res) => {
@@ -65,7 +71,12 @@ router.get('/', (req, res) => {
 module.exports = router;
 ```
 
-Now we can use tell our server file to direct all requests to the router. Inside `server.js`, replace the current `app.get(...)` line with this:
+Now we can use tell our server file to direct all requests to the router. Inside `server.js`, add this immediately after `const express = require('express')`:
+```javascript
+const routes = require('./routes');
+```
+
+... and replace the current `app.get( ... )` line with this:
 ```javascript
 app.use('/', routes);
 ```
