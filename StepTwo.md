@@ -16,7 +16,7 @@ Remember that your uncle wants to be able to:
 > **Collaborate and listen.** Your API is a brand new invention. Take a moment to think about what your uncle wants the front end to do; this will determine what kind of data you need your controllers to deliver!
 
 ## Set up the controllers file
-We can start building controller functions even before we install Express. Go ahead and `mkdir controllers` from within your `/records-api` directory, then `touch controllers/index.js`. Let's start by importing our models and our DB connectino and making a function to show all artists. Add this to your file:
+We can start building controller functions even before we install Express. Go ahead and `mkdir controllers` from within your `/records-api` directory, then `touch controllers/index.js`. Let's start by importing our models and our DB connection and making a function to show all artists. Add this to your file:
 
 ```javascript
 const db = require('../db/index.js')
@@ -52,10 +52,14 @@ Now you'll write the rest of your controller functions to get the info you need 
 
 You'll need *at least* these functions to move forward with the rest of the app:
 
-* `showArtistById` to show a single artist with info for each of their records
+* `getArtistById` to show a single artist with info for each of their records
 * `createArtist` to add a new artist to the database
 * `createRecord` to add a new record and associate it with a particular artist
 
 These two `create` functions will need to take in an object containing artist or record data. From there, you can choose to use the `.create()` or `.insertOne()` methods of each model to insert the new entry in the database.
+
+>**PRO TIP:** If you make a bunch of malformed or duplicate MongoDB documents while you're testing your new functions, you can fairly easily run `db.dropDatabase()` in the `mongo` shell, then run `seed/artists.js` and `seed/records.js` files again in Node to start again with fresh data.
+
+>**BONUS:** Shouldn't our `findAllArtists()` function sort the results alphabetically by name? Your uncle would probably like that.
 
 Once you've fully tested your functions, it's time to move on to [Step Three](StepThree.md)!
