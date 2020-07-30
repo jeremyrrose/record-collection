@@ -27,4 +27,4 @@ Fork and clone this repository, then let's build your uncle a full-stack app usi
 * [Step One - Setting up and seeding your database](StepOne.md)
 * [Step Two - Querying the collection with Mongoose](StepTwo.md)
 * [Step Three - Serving data via Express](StepThree.md)
-* [Step Four - Designing the front end](StepFour.md)
+* [Step Four - Connecting the front end](StepFour.md)
