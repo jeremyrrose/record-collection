@@ -89,8 +89,7 @@ const artistSchema = new Schema(
           }
         ]
     },
-    { timestamps: true } // You don't neeeeed timestamps for this app, so you can leave these out if you prefer.
-    // But this is how to include timestamps.
+    { timestamps: false } // You'll use timestamps for a lot of things, but they're not needed here.
 )
 
 module.exports = mongoose.model('artists', artistSchema)
