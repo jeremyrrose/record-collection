@@ -182,7 +182,7 @@ const recordSeed = [
   {
     title: "The Low End Theory",
     artist: "A Tribe Called Quest",
-    releaseYear: 1990,
+    releaseYear: 1991,
     coverImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/42/ATribeCalledQuestTheLowEndtheory.jpg/220px-ATribeCalledQuestTheLowEndtheory.jpg'
   },
   {

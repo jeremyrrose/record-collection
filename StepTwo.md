@@ -40,7 +40,7 @@ run()
 
 Now run `node controllers` (or `node controllers/index.js`) in your terminal. You should see a list of artists. Radical!
 
-Notice how we've used `await` in two places to wait make sure we have a result before moving on. Keep this in mind going forward!
+Notice how we've used `await` in two places to make sure we have a result before moving on. Keep this in mind going forward!
 
 Notice also that the `records` attribute for each artist is an array filled with record IDs. What if you wanted to include the actual info from the record document? You can use `.populate()` to do this. Change the first line of `findAllArtists` to this and run the file again:
 ```javascript
@@ -58,7 +58,7 @@ You'll need *at least* these functions to move forward with the rest of the app:
 * `createArtist` to add a new artist to the database
 * `createRecord` to add a new record and associate it with a particular artist
 
-These two `create` functions will need to take in an object containing artist or record data. From there, you can choose to use the `.create()` or `.insertOne()` methods of each model to insert the new entry in the database.
+The two `create` functions will need to take in an object containing artist or record data. From there, you can choose to use the `.create()` or `.insertOne()` methods of each model to insert the new entry in the database.
 
 >**PRO TIP:** If you make a bunch of malformed or duplicate MongoDB documents while you're testing your new functions, you can fairly easily run `db.dropDatabase()` in the `mongo` shell, then run `seed/artists.js` and `seed/records.js` files again in Node to start again with fresh data.
 
