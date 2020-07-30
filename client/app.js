@@ -1,13 +1,15 @@
 // set DOM vars
-const $artistsList = $('.artistsList')
-const $info = $('.info')
-const $records = $('.records')
-const $addArtistButton = $('.artistControls button')
-const $addRecordButton = $('.recordControls button')
+const $artistsList = $('.artistsList') // contains list of artists
+const $info = $('.info') // contains artist info
+const $records = $('.records') // contains records
+const $addArtistButton = $('.artistControls button') // "Add Artist" button
+const $addRecordButton = $('.recordControls button') // "Add Record" button
 
 const url = 'http://localhost:3000'
 
+// gets artists from API and adds artist buttons
 const getArtists = async () => {
+
     const response = await fetch(url + '/artists').then(res => res.json())
 
     response.forEach(artist => {
@@ -16,12 +18,16 @@ const getArtists = async () => {
             .attr('id',artist._id)
             .text(artist.name)
             .on('click', showOneArtist)
+
         $artistsList.append($artistSelector)
     })
 }
 
+// fetches one artist and artist's records to update $info and $records
 const showOneArtist = (event) => {
+
     console.log('use this: ', event.target.id) // look in your console!
+
     $info
         .empty()
         .append(
@@ -40,9 +46,5 @@ const showOneArtist = (event) => {
                 .text('And records would go here!')
         )
 }
-
-
-
-
 
 getArtists()

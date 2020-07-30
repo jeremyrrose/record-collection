@@ -20,16 +20,25 @@
             <button type="button">Add an Artist</button>
         </div>
     </header>
+
     <div class="main">
+
         <div class="artistsList">
-            <!-- jQuery will populate with record tiles in this format:
+            <!-- jQuery will populate with artist buttons in this format:
                 <div class="artistSelector" id="artistId">
                     Artist Name
                 </div> 
             -->
         </div>
+
         <div class="artist">
-            <div class="info"></div>
+            <div class="info">
+                <!-- jQuery will populate with artist info in this format:
+                    <h2>Artist Name</h2>
+                    <p>Number of Hot 100 Hits: numberOfHits</p>
+                -->
+            </div>
+
             <div class="records">
                 <!-- jQuery will populate with record tiles in this format:
                     <div class="record">
@@ -39,10 +48,12 @@
                     </div>
                  -->
             </div>
+
             <div class="recordControls">
                 <button type="button" artistId="">Add Record for This Artist</button>
             </div>
         </div>
+
     </div>
     
 </body>
