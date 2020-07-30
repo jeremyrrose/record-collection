@@ -47,4 +47,4 @@ const showOneArtist = (event) => {
         )
 }
 
-getArtists()
+// getArtists()

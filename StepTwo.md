@@ -9,11 +9,13 @@ Remember that your uncle wants to be able to:
 * Add new records for existing artists
 * Add new artists
 
-> **ALLRIGHT STOP!**
+>**ALLRIGHT STOP!**
 >
-> ![ICE ICE BABY](https://media2.giphy.com/media/5pYo6tWPle0WMyhksf/giphy.gif?cid=ecf05e47ca0g25qvi6bsv5wxqa5tm2yhr6oisfi5gc960tzl&rid=giphy.gif)
+>![ICE ICE BABY](https://media2.giphy.com/media/5pYo6tWPle0WMyhksf/giphy.gif?cid=ecf05e47ca0g25qvi6bsv5wxqa5tm2yhr6oisfi5gc960tzl&rid=giphy.gif)
 >
-> **Collaborate and listen.** Your API is a brand new invention. Take a moment to think about what your uncle wants the front end to do; this will determine what kind of data you need your controllers to deliver!
+>**Collaborate and listen.** Your API is a brand new invention. Take a moment to think about what your uncle wants the front end to do; this will determine what kind of data you need your controllers to deliver!
+>
+>Seriously, talk this over a little with your colleagues. How is this all gonna work?
 
 ## Set up the controllers file
 We can start building controller functions even before we install Express. Go ahead and `mkdir controllers` from within your `/records-api` directory, then `touch controllers/index.js`. Let's start by importing our models and our DB connection and making a function to show all artists. Add this to your file:

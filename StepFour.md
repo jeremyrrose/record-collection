@@ -2,6 +2,8 @@
 
 At this point, you've built an entire API for [your uncle's record collection app](README.md). You *are* a computer genius, just like your grandma says! You should be feeling pretty good about yourself.
 
+>**STRIKE A POSE**
+>
 >![strike a pose](https://media1.giphy.com/media/uLiOo1PxPjynK/giphy.gif?cid=ecf05e473auia4funwi6seiy7tkkz4wyhesnd4xrcw8ctx22&rid=giphy.gif)
 
 But your uncle doesn't know much about REST APIs, and he'd like to be able to use this app on his phone from the record store -- so it's time to connect your API to a front end using jQuery!
@@ -14,11 +16,13 @@ Go ahead and load `index.html` in your browser. Looks pretty bodacious, right? B
 
 Take a look at `app.js`. It's already set up with a few jQuery variables attached to DOM elements you'll want to use. It also has two functions -- `getArtists` and `showOneArtist`. See if you can tell what they do!
 
-Now, make sure your API server is running, and then un-comment the last line of `app.js`. This will execute `getAllArtists` when you refresh your browser. Awesome! (Take a close look at the function and make sure you understand what just happened.)
+Now, make sure your API server is running, and then un-comment the last line of `app.js`. This will execute `getAllArtists` when you refresh your browser. Awesome! 
+
+>Take a close look at the function and make sure you understand what just happened. This will make the following steps easier.
 
 ## Show each artist
 
-Ok, now when you click on one of the artists, you should see the artist's info appear along with all of their records... but that *doesn't* happen, because you haven't written `showOneArtist` yet.
+Ok, now click on one of the artists. You should see the artist's info appear along with all of their records... but that *doesn't* happen, because you haven't written `showOneArtist` yet.
 
 Fix it! Here are some hints:
 
@@ -64,3 +68,5 @@ If you intend to include this app in your portfolio, do a little more to make it
 * **User interface:** Could someone navigate this app without you explaining it to them? Do the submit buttons give clear feedback that things are happening in the back end?
 * **Functionality:** What if your uncle sells some of his records? Can he delete them? What if he spells Boyz II Men's name wrong? Can he edit their entry?
 * **Style:** Let's be honest: This looks a little old-fashioned. Delete the CSS file and start from scratch with your own design.
+
+Congratulations!

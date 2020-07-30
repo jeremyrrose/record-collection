@@ -86,7 +86,7 @@ And add two scripts -- `start` and `dev` -- to your `package.json` file:
 ...
 ```
 
-Now start your development server by typing `npm run dev`.
+Now you can start your development server by typing `npm run dev`.
 
 ## Set up routing
 We'll use Express router to handle routing, so let's make a directory for that and create our router file:
