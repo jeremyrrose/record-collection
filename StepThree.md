@@ -13,7 +13,7 @@ Now that you've set up your database and built controller functions to pull data
 Now we can build a server using Express and `Router` to connect requests to our controller functions. First we'll need to install Express and our middleware dependencies inside our `records-api` directory:
 
 ```bash
-npm i express morgan cors
+npm i express dotenv morgan cors
 ```
 
 Now `touch server.js`, and let's get things started with some exciting Express boilerplate! 
@@ -60,7 +60,7 @@ app.listen(PORT, () => {
 });
 ```
 
-Now, because you understand what's going on here, you can tell that this server still won't work until we put some crucial info into a `.env` file. Here's a fun new way to do that with one command in your terminal:
+Now, because you totally understand what's going on here, you can tell that this server still won't work until we put some crucial info into a `.env` file. Here's a fun new way to do that with one command in your terminal:
 
 ```bash
 echo -e "PORT=3000\nNODE_ENV=development" >> .env

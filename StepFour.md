@@ -40,10 +40,27 @@ Did it work? How can you tell?
 
 ## Create new records
 
+There's also a button to "Add Record for This Artist", but it doesn't work. We need to make that button show a form on the page just like "Add an Artist", but it's not quite as simple.
 
+The big issue: Who is "This Artist"? Do we need to change `showOneArtist` to add the selected artist's ID somewhere in the DOM?
 
+Write two more functions: one to display the form, and another to submit the form via a POST request, complete with artist ID.
 
+## You win!
 
+You are the greatest artist of your generation.
 
+![THE ARTIST](https://media3.giphy.com/media/SRqeqb0qJpy9P1oZlq/giphy.gif?cid=ecf05e4777adehycot02gsruqowi6is1rbsxlf22u09392pm&rid=giphy.gif)
 
+Well, OK, at least give yourself a pat on the back; the client (your uncle) is sure to be pleased with the full-stack app you just built *IN A DAY*, even if he'll never understand how much work went into it.
 
+## Is your app perfect?
+
+Far from it! For one, you'll still need to [deploy your app](https://git.generalassemb.ly/SEIR-629/Heroku-Netlify-Deployment/blob/master/Deploy.md) for your uncle to use it.
+
+If you intend to include this app in your portfolio, do a little more to make it your own. Suggestions for improvement:
+
+* **Mobile responsiveness:** How could you rearrange the front end to look better on your uncle's iPhone5?
+* **User interface:** Could someone navigate this app without you explaining it to them? Do the submit buttons give clear feedback that things are happening in the back end?
+* **Functionality:** What if your uncle sells some of his records? Can he delete them? What if he spells Boyz II Men's name wrong? Can he edit their entry?
+* **Style:** Let's be honest: This looks a little old-fashioned. Delete the CSS file and start from scratch with your own design.
