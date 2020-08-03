@@ -85,14 +85,14 @@ const artistSchema = new Schema(
         records: [
           {
             type: Schema.Types.ObjectId,
-            ref: 'records'
+            ref: 'Record'
           }
         ]
     },
     { timestamps: false } // You'll use timestamps for a lot of things, but they're not needed here.
 )
 
-module.exports = mongoose.model('artists', artistSchema)
+module.exports = mongoose.model('Artist', artistSchema)
 ```
 
 Ok, cool. Now for each individual record, your uncle wants to be able to see the following:
@@ -100,10 +100,10 @@ Ok, cool. Now for each individual record, your uncle wants to be able to see the
 * Title
 * Artist
 * Release year
-* Cover art (optional)
+* Cover image url (optional)
 
 **The next part is up to *you*.** Touch `models/record.js`, then get in there and define your `Record` model!
-> HINT: The `artist` in your model will refer to a MongoDB document ID with ref `'artists'`.
+> HINT: The `artist:` in your model will refer to a MongoDB document ID with ref `'Artist'`.
 
 ## Seeding the database
 
