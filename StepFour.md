@@ -36,11 +36,13 @@ The page also has an "Add an Artist" button, but it doesn't *do* anything. Let's
 
 * Create a function that will clear `$info` and `$records`, then fill that space with a form for the info needed for a new artist. (Make sure there's a "Submit" button!)
 * Add an event listener to `$addArtistButton` to execute that function.
-* Now write another function to convert info from the form into a PUT request to your API, then link this function to the "Submit" button.
+* Now write *another* function to convert info from the form into a PUT request to your API, then link *this* function to the "Submit" button.
 
 Did it work? How can you tell?
 
 >**BONUS:** What should happen after the artist is successfully added? Make some more changes to the DOM to let your uncle know that his artist was submitted.
+>
+>*HINT:* You might be able to recycle your `getAllArtists` function here to show how you've updated the artist list.
 
 ## Create new records
 

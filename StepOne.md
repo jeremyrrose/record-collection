@@ -123,6 +123,10 @@ const artistSeed = [
   { name: "Cyndi Lauper", hot100Hits: 14 }
 ]
 
+// clear artists collection in database
+// this is useful if you want to use the seed file to reset your DB after testing a CRUD function
+Artist.find({}).remove()
+
 // insert all artists from array
 Artist.insertMany(artistSeed,
   (error, response) => {
@@ -200,6 +204,10 @@ const recordSeed = [
 
 // add the record seed array with necessary awaits
 const addRecords = async () => {
+
+  // remove existing records from database
+  // this is useful if you want to use the seed file to reset your DB after testing a CRUD function
+  await Record.find({}).remove()  
   
   await Promise.all(recordSeed.map(async recordToAdd => {
 
@@ -235,7 +243,9 @@ Because we need to get artist IDs for each record from the database, we need to 
 * Create the record in the database.
 * Push the newly created record ID into the artist's `records` array and `.save()` the artist in the database.
 
-Phwew! That's a lot. Now run `node seed/records.js` in your terminal. You should see the new records and updated artists listed in your terminal.
+Phwew! That's a lot. But it provides a hint as to how we can to build the same sort of relationship into new `Record`s that we add to the database in future steps.
+
+For now, just run `node seed/records.js` in your terminal. You should see the new records and updated artists listed on the screen.
 
 Drop into your MongoDB shell and run some queries to check that the seed data is there...
 

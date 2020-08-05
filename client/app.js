@@ -10,6 +10,8 @@ const url = 'http://localhost:3000'
 // gets artists from API and adds artist buttons
 const getArtists = async () => {
 
+    $artistsList.empty()
+
     const response = await fetch(url + '/artists').then(res => res.json())
 
     response.forEach(artist => {

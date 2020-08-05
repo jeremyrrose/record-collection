@@ -47,7 +47,7 @@ Notice also that the `records` attribute for each artist is an array filled with
 const artists = await Artist.find().populate('records')
 ```
 
-Your terminal now should show each ID replaced by an `[Object]` that will contain all the data for each record. You might not always want to use `.populate()`... but sometimes you might!
+Your terminal now should show each ID replaced by an `[Object]`; this is Node's way of saying "There's an object nested here but I'm not going to print everything here unless you ask for it more directly." But each of these `[Object]`s actually contains all the data for an individual record, instead of just the `ObjectId`. You may not always want to use `.populate()`... but sometimes you might!
 
 ## Build the controllers
 Now you'll write the rest of your controller functions to get the info you need from the database! After writing a function, you can test it by adding it to the `run` function in `controllers/index.js`.
