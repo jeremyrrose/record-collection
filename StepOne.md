@@ -125,18 +125,20 @@ const artistSeed = [
 
 // clear artists collection in database
 // this is useful if you want to use the seed file to reset your DB after testing a CRUD function
-Artist.find({}).remove()
+Artist.deleteMany()
 
 // insert all artists from array
-Artist.insertMany(artistSeed,
-  (error, response) => {
-      if (error) {
-          console.log(error);
-      } else {
-          console.log(response);
-      }
-      db.close()
-  })
+    .then(() => {
+        Artist.insertMany(artistSeed,
+          (error, response) => {
+              if (error) {
+                  console.log(error);
+              } else {
+                  console.log(response);
+              }
+              db.close()
+          })
+      })
 ```
 
 What's happening here? First we're bringing in our DB connection, then requiring the Artist model so that we can use it to add artists. Then we use the model's `.insertMany()` method to add our entire array of artists.
@@ -207,7 +209,7 @@ const addRecords = async () => {
 
   // remove existing records from database
   // this is useful if you want to use the seed file to reset your DB after testing a CRUD function
-  await Record.find({}).remove()  
+  await Record.deleteMany()  
   
   await Promise.all(recordSeed.map(async recordToAdd => {
 
