@@ -28,3 +28,13 @@ Fork and clone this repository, then let's build your uncle a full-stack app usi
 * [Step Two - Querying the collection with Mongoose](StepTwo.md)
 * [Step Three - Serving data via Express](StepThree.md)
 * [Step Four - Connecting the front end](StepFour.md)
+
+>**SOLUTIONS:**
+>
+>Code for one possible solution to this lab can be found here: https://github.com/jeremyrrose/record-collection-solution
+>
+>And you can take a look at an example front end here: http://record-lab.surge.sh/
+>
+>**It is highly recommended** that you **try the lab on your own** first before looking at any solutions; these Markdown files are designed to lead you toward solutions in a way that will help you understand how each part of your app works.
+>
+>Plus you'll have more fun if you go through it step by step!
