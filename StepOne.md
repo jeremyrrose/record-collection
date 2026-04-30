@@ -158,49 +158,49 @@ const recordSeed = [
     title: "3 Feet High and Rising",
     artist: "De La Soul",
     releaseYear: 1989,
-    coverImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/DeLaSoul3FeetHighandRisingalbumcover.jpg/220px-DeLaSoul3FeetHighandRisingalbumcover.jpg'
+    coverImage: 'https://coverartarchive.org/release/330fdae4-30b1-35b1-ab87-3a8922f76d8a/front-250'
   },
   { 
     title: "Private Eyes",
     artist: "Darryl Hall & John Oates",
     releaseYear: 1981,
-    coverImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/26/Hall_Oates_Private_Eyes.jpg/220px-Hall_Oates_Private_Eyes.jpg'
+    coverImage: 'https://coverartarchive.org/release-group/7bf302c6-dd12-3360-a944-7f88e5c96743/front-250'
   },
   { 
     title: "Ooh Yeah!",
     artist: "Darryl Hall & John Oates",
     releaseYear: 1988,
-    coverImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Hall_Oates_Ooh_Yeah.jpg/220px-Hall_Oates_Ooh_Yeah.jpg'
+    coverImage: 'https://coverartarchive.org/release-group/496ef501-f4c8-3f30-af9c-14a1e63a7a97/front-250'
   },
   {
     title: "In a Different Light",
     artist: "The Bangles",
     releaseYear: 1986,
-    coverImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/The_Bangles_-_Different_Light.jpg/220px-The_Bangles_-_Different_Light.jpg'
+    coverImage: 'https://coverartarchive.org/release/88395238-d787-41ee-bfd5-134e4bf31475/front-250'
   },
   {
     title: "People's Instinctive Travels and the Paths of Rhythm",
     artist: "A Tribe Called Quest",
     releaseYear: 1990,
-    coverImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/ATCQPeople%27sInstinctTravels.jpg/220px-ATCQPeople%27sInstinctTravels.jpg'
+    coverImage: 'https://coverartarchive.org/release-group/02adb8a7-496c-3a9a-a324-662df73fdba5/front-250'
   },
   {
     title: "The Low End Theory",
     artist: "A Tribe Called Quest",
     releaseYear: 1991,
-    coverImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/42/ATribeCalledQuestTheLowEndtheory.jpg/220px-ATribeCalledQuestTheLowEndtheory.jpg'
+    coverImage: 'https://coverartarchive.org/release-group/c3733436-fcba-3c08-b082-d548df5c5139/front-250'
   },
   {
     title: "Whitney",
     artist: "Whitney Houston",
     releaseYear: 1987,
-    coverImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Whitney_Houston_-_Whitney_%28album%29.jpg/220px-Whitney_Houston_-_Whitney_%28album%29.jpg'
+    coverImage: 'https://coverartarchive.org/release-group/4f5bfc50-7a41-385e-9961-3db0feaec430/front-250'
   },
   {
     title: "She's So Unusual",
     artist: "Cyndi Lauper",
     releaseYear: 1983,
-    coverImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/09/ShesSoUnusual1984.PNG/220px-ShesSoUnusual1984.PNG'
+    coverImage: 'https://coverartarchive.org/release/7c2c0eff-37d1-4cd7-933c-bb62afa6dece/front-250'
   }
 ]
 
