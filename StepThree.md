@@ -89,6 +89,7 @@ And add two scripts -- `start` and `dev` -- to your `package.json` file:
 Now you can start your development server by typing `npm run dev`.
 
 ## Set up routing
+
 We'll use Express router to handle routing, so let's make a directory for that and create our router file:
 
 ```bash
@@ -109,7 +110,7 @@ router.get('/', (req, res) => {
 module.exports = router;
 ```
 
-Now we can use tell our server file to direct all requests to our new router. Inside `server.js`, add this at the end of the `// dependencies` section:
+Now we can tell our server file to direct all requests to our new router. Inside `server.js`, add this at the end of the `// dependencies` section:
 
 ```javascript
 const routes = require('./routes');

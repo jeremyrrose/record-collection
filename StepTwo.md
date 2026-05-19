@@ -43,6 +43,7 @@ Now run `node controllers` (or `node controllers/index.js`) in your terminal. Yo
 Notice how we've used `await` in two places to make sure we have a result before moving on. Keep this in mind going forward!
 
 Notice also that the `records` attribute for each artist is an array filled with record IDs. What if you wanted to include the actual info from the record document? You can use `.populate()` to do this. Change the first line of `findAllArtists` to this and run the file again:
+
 ```javascript
 const artists = await Artist.find().populate('records')
 ```
@@ -50,6 +51,7 @@ const artists = await Artist.find().populate('records')
 Your terminal now should show each ID replaced by an `[Object]`; this is Node's way of saying "There's an object nested here but I'm not going to print everything here unless you ask for it more directly." But each of these `[Object]`s actually contains all the data for an individual record, instead of just the `ObjectId`. You may not always want to use `.populate()`... but sometimes you might!
 
 ## Build the controllers
+
 Now you'll write the rest of your controller functions to get the info you need from the database! After writing a function, you can test it by adding it to the `run` function in `controllers/index.js`.
 
 You'll need *at least* these functions to move forward with the rest of the app:

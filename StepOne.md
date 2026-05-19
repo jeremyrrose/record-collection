@@ -41,6 +41,7 @@ let exampleArtist = {
 That's pretty straightforward! Let's get started by setting up Mongoose and building an `Artist` model.
 
 First we'll install Mongoose and set up some directories and files to handle our models and seed data:
+
 ```bash
 npm i mongoose
 mkdir db models seed
@@ -103,6 +104,7 @@ Ok, cool. Now for each individual record, your uncle wants to be able to see the
 * Cover image url (optional)
 
 **The next part is up to *you*.** Touch `models/record.js`, then get in there and define your `Record` model!
+
 > HINT: The `artist:` in your model will refer to a MongoDB document ID with ref `'Artist'`.
 
 ## Seeding the database
@@ -145,7 +147,9 @@ What's happening here? First we're bringing in our DB connection, then requiring
 
 Now run `node seed/artists` in your terminal. You should see a list of artists generated... but none of them has any `records` listed. Now we need to seed records, which will be slightly more complicated.
 
-So `touch seed/records.js` and add the code below. **IMPORTANT:** Take a look at the `recordSeed` array. Do the attributes for each record (`title`, `artist`, `releaseYear`, and `coverImage`) match the attribute names in the `Record` model you defined earlier? If not, change one or the other to make them match.
+So `touch seed/records.js` and add the code below. 
+
+>**IMPORTANT:** Take a look at the `recordSeed` array. Do the attributes for each record (`title`, `artist`, `releaseYear`, and `coverImage`) match the attribute names in the `Record` model you defined earlier? If not, change one or the other to make them match.
 
 ```javascript
 const db = require('../db/index.js')
